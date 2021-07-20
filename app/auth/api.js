@@ -1,5 +1,4 @@
 'use strict'
-
 const store = require('../store')
 const config = require('../config')
 const signUp = function (data) {
@@ -10,7 +9,6 @@ const signUp = function (data) {
     data: data
   })
 }
-
 const signIn = function (data) {
   // console.log(data)
   return $.ajax({

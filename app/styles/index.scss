@@ -1,1 +1,15 @@
 @import '~bootstrap/scss/bootstrap';
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 2px;
+  height: 600px;
+  width: 604px;
+}
+
+.square {
+  height: 200px;
+  width: 200px;
+  background-color: lightblue;
+}
