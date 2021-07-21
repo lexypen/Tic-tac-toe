@@ -1,7 +1,8 @@
 'use strict'
 const getFormFields = require('./../../lib/get-form-fields')
 const api = require('./api')
-const ui = require('./ui')
+const ui = require('../ui')
+
 const onSignUp = function (event) {
   event.preventDefault()
   // console.log('Hello')
@@ -17,6 +18,7 @@ const onSignUp = function (event) {
   // Handle failed API calls with .catch
     .catch(ui.onSignUpFailure)
 }
+
 const onSignIn = function (event) {
   event.preventDefault()
   // console.log('Hello')
@@ -27,11 +29,13 @@ const onSignIn = function (event) {
   // console.log(data)
   // Make an API call using AJAX
   api.signIn(data)
+
   // Handle successful API calls with .then
     .then(ui.onSignInSuccess)
   // Handle failed API calls with .catch
     .catch(ui.onSignInFailure)
 }
+
 const onSignOut = function () {
   api.signOut()
     .then(ui.onSignOutSuccess)
