@@ -16,9 +16,11 @@ const onSignUpFailure = () => {
 }
 
 const onSignInSuccess = (response) => {
-  // console.log('Hooray!')
+  console.log('This is the response!', response)
   $('#message').text(`Thank you for signing in ${response.user.email}.`)
   store.token = response.user.token
+  store.user = response.user
+  console.log('This is store!', store)
   $('#sign-in').trigger('reset')
   $('#sign-in').hide()
   $('#sign-up').hide()

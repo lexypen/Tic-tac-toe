@@ -15,8 +15,9 @@
       <h1>Welcome to Tic-Tac-Toe Practice!</h1>
 
       <div id="forms">
-      <br /><h2>Sign Up</h2>
+      <br />
         <form id="sign-up">
+          <h2 class="form-title">Sign Up</h2>
           <label>Email</label>
           <input name="credentials[email]" type="email"> <br />
           <label>Password</label>
@@ -26,8 +27,9 @@
           <input type="submit" value="Sign up">
         </form>
 
-        <br /><br /><h2>Sign In</h2>
+        <br /><br />
         <form id="sign-in">
+          <h2 class="form-title">Sign In</h2>
           <label>Email</label>
           <input name="credentials[email]" type="email"> <br />
           <label>Password</label>
@@ -35,14 +37,14 @@
           <input type="submit" value="Sign in">
         </form>
       </div>
-
+      <p id="message"></p>
         <br /><br /><button id="sign-out" type="button">
           Sign Out
         </button>
 
-        <br /> <br /> <button id="new-game" type="button">
+        <br /><br /><button id="new-game-button" type="button">
           New Game
-        </button>
+        </button><br /><br />
 
         <div  class="grid">
           <div class="square" id="1"></div>
