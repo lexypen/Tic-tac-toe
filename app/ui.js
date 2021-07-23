@@ -25,6 +25,7 @@ const onSignInSuccess = (response) => {
   $('#sign-in').hide()
   $('#sign-up').hide()
   $('#sign-out').show()
+  $('.grid').show()
 }
 
 const onSignInFailure = () => {
@@ -39,6 +40,7 @@ const onSignOutSuccess = () => {
   $('#sign-in').show()
   $('#sign-up').show()
   $('#sign-out').hide()
+  $('.grid').hide()
 }
 
 const onSignOutFailure = () => {

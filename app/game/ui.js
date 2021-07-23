@@ -12,7 +12,12 @@ const onNewGameFailure = (response) => {
   console.log(response)
 }
 
+const placePiece = function (square, player) {
+  $(`#${square}`).text(player)
+}
+
 module.exports = {
   onNewGameSuccess,
-  onNewGameFailure
+  onNewGameFailure,
+  placePiece
 }

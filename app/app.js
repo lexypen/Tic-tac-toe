@@ -13,4 +13,6 @@ $(() => {
   $('#sign-out').on('click', authEvents.onSignOut)
   // the line below is the listener for my new game button.
   $('#new-game-button').on('click', gameEvents.onNewGame)
+  $('.grid').hide()
+  $('.grid').on('click', gameEvents.onMove)
 })

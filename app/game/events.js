@@ -8,6 +8,18 @@ const onNewGame = function () {
     .catch(ui.onNewGameFailure)
 }
 
+// const placePiece = function (square, player) {
+//   $(square).text(player)
+// }
+
+const onMove = function (event) {
+  console.log(event)
+  console.log(event.target)
+  const targetData = event.target
+  ui.placePiece(targetData.id, 'X')
+}
+
 module.exports = {
-  onNewGame
+  onNewGame,
+  onMove
 }
