@@ -12,9 +12,9 @@ As a TTT Practice user I want to be able to...
   
   -Receive a message from the site when X wins or when O wins or when there is a tie
   
-  -See that the board is blocked from receiving any new moves
+  -See that the board is blocked from receiving any new moves after a win or a tie
   
-  -Start a new game by clicking the New Game button again
+  -Start a new game by clicking the New Game button again.
   
 
 About TTT Pratice
