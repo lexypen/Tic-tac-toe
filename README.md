@@ -1,5 +1,6 @@
 User Story
 
+About TTT Pratice
 TTT Practice is a website for user who, for whatever reason, take their tic-tac-toe game really seriously. And we all know how like-minded individuals tend to find each other, so the TTT Practice user probably had a friend or two who takes tic-tac-toe just as seriously. When they meet, there are some serious Pokémon battle vibes. So, TTT Practice was created so that these two geeks can practice their tic-tac-toe skills on their own, so that when they meet to do battle, they're at the top of their game.
 
 Anyone surfing the interwebs can search and open a website for practicing their Tic-Tac-Toe strategy skills by going to the website, tttpractice.com.
