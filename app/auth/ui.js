@@ -1,6 +1,6 @@
 'use strict'
 
-const store = require('./store')
+const store = require('../store')
 
 const onSignUpSuccess = (response) => {
 // console.log('Hooray!')
@@ -26,6 +26,7 @@ const onSignInSuccess = (response) => {
   $('#sign-up').hide()
   $('#sign-out').show()
   $('.grid').show()
+  $('#new-game-button').show()
 }
 
 const onSignInFailure = () => {

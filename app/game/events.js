@@ -1,5 +1,7 @@
 const api = require('./api')
 const ui = require('./ui')
+const store = require('../store')
+store.currentPlayer = 'X'
 
 // onNewGame is the name of the handler for the new game button.
 const onNewGame = function () {
@@ -13,10 +15,11 @@ const onNewGame = function () {
 // }
 
 const onMove = function (event) {
-  console.log(event)
-  console.log(event.target)
-  const targetData = event.target
-  ui.placePiece(targetData.id, 'X')
+  if (!$(event.target).text()) {
+    console.log('test')
+    ui.placePiece(event.target)
+    store.currentPlayer = store.currentPlayer === 'O' ? 'X' : 'O'
+  }
 }
 
 module.exports = {

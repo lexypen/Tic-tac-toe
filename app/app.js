@@ -15,4 +15,5 @@ $(() => {
   $('#new-game-button').on('click', gameEvents.onNewGame)
   $('.grid').hide()
   $('.grid').on('click', gameEvents.onMove)
+  $('#new-game-button').hide()
 })
