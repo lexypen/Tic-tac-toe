@@ -20,10 +20,6 @@ const onSignInSuccess = (response) => {
   $('#sign-in').hide()
   $('#sign-up').hide()
   $('#sign-out').show()
-<<<<<<< HEAD:app/auth/ui.js
-  $('.grid').show()
-=======
->>>>>>> feature:app/ui.js
   $('#new-game-button').show()
 }
 
