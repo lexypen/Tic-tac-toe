@@ -5,12 +5,9 @@ const ui = require('./ui')
 
 const onSignUp = function (event) {
   event.preventDefault()
-  // console.log('Hello')
   // Get information from event and form
   const form = event.target
-  // console.log(form)
   const data = getFormFields(form)
-  // console.log(data)
   // Make an API call using AJAX
   api.signUp(data)
   // Handle successful API calls with .then
@@ -21,12 +18,10 @@ const onSignUp = function (event) {
 
 const onSignIn = function (event) {
   event.preventDefault()
-  // console.log('Hello')
   // Get information from event and form
   const form = event.target
-  // console.log(form)
   const data = getFormFields(form)
-  // console.log(data)
+  // (data)
   // Make an API call using AJAX
   api.signIn(data)
 

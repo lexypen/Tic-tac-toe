@@ -1,13 +1,15 @@
 'use strict'
 
 const store = require('../store')
+const logic = require('./logic')
 
 const onNewGameSuccess = (response) => {
-  console.log(response)
-  store.gameid = response.game._id
-  console.log(store.gameid)
+  store.gameId = response.game._id
   clearBoard()
   store.currentPlayer = 'X'
+  logic.clearBoard()
+  $('#grid').show()
+  $('#message').text(' ')
 }
 
 const clearBoard = () => {

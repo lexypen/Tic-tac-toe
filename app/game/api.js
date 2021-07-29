@@ -13,6 +13,29 @@ const newGame = function () {
   })
 }
 
+const updateGame = function (number, value, boolean) {
+  console.log(number, value, boolean)
+  return $.ajax({
+    url: config.apiUrl + '/games/' + store.gameId,
+    method: 'PATCH',
+    headers: {
+      Authorization: 'Bearer ' + store.token
+    },
+    data: {
+      game: {
+        cell: {
+          index: number,
+          value: value
+        },
+        over: boolean
+      }
+    }
+  })
+    .then(response => console.log(response))
+    .catch(response => console.log(response))
+}
+
 module.exports = {
-  newGame
+  newGame,
+  updateGame
 }
