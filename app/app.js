@@ -16,4 +16,5 @@ $(() => {
   $('#grid').hide()
   $('#grid').on('click', gameEvents.onMove)
   $('#new-game-button').hide()
+  $('#sign-out').hide()
 })

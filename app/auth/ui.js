@@ -34,6 +34,7 @@ const onSignOutSuccess = () => {
   $('#sign-up').show()
   $('#sign-out').hide()
   $('.grid').hide()
+  $('#new-game-button').hide()
 }
 
 const onSignOutFailure = () => {
