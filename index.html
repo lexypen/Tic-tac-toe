@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Tic-Tac-Toe Practice</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body>
+      <h1>Welcome to Tic-Tac-Toe Practice!</h1>
+
+      <p id="message"></p>
+
+      <div id="forms">
+      <br />
+        <form id="sign-up">
+          <h2 class="form-title">Sign Up</h2>
+          <label>Email</label>
+          <input name="credentials[email]" type="email"> <br />
+          <label>Password</label>
+          <input name="credentials[password]" type="password"> <br />
+          <label>Password Confirmation</label>
+          <input name="credentials[password_confirmation]" type="password"> <br />
+          <input type="submit" value="Sign up">
+        </form>
+
+        <br /><br />
+        <form id="sign-in">
+          <h2 class="form-title">Sign In</h2>
+          <label>Email</label>
+          <input name="credentials[email]" type="email"> <br />
+          <label>Password</label>
+          <input name="credentials[password]" type="password"> <br />
+          <input type="submit" value="Sign in">
+        </form>
+      </div>
+
+        <br /><br /><button id="sign-out" type="button">
+          Sign Out
+        </button>
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <button id="new-game-button" type="button">
+          New Game
+        </button>
+        <br />
+        <br />
+
+        <div class="grid" id="grid">
+          <div class="square" id="0" data-index="0"></div>
+          <div class="square" id="1" data-index="1"></div>
+          <div class="square" id="2" data-index="2"></div>
+          <div class="square" id="3" data-index="3"></div>
+          <div class="square" id="4" data-index="4"></div>
+          <div class="square" id="5" data-index="5"></div>
+          <div class="square" id="6" data-index="6"></div>
+          <div class="square" id="7" data-index="7"></div>
+          <div class="square" id="8" data-index="8"></div>
+        </div>
+        <br /><br /><br />
+    </body>
+</html>
